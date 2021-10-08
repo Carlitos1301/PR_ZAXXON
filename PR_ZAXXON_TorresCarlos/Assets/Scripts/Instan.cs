@@ -1,0 +1,49 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Instan : MonoBehaviour
+{
+    float intervalo;
+    float speed;
+    [SerializeField] GameObject columna;
+    [SerializeField] Transform instantiatePos;
+    [SerializeField] GameObject[] objetos;
+    [SerializeField] float distancia;
+    Inicio inicio;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        distancia = 30f;
+        inicio = inicio = GameObject.Find("Inicio").GetComponent<Inicio>();
+        speed = inicio.spaceship;
+        intervalo = distancia / speed;
+
+
+
+        StartCoroutine("Columna");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       
+    }
+    IEnumerator Columna()
+    {
+        
+        while (true)
+        {
+           
+
+
+            float randomX = Random.Range(-18f, 18);
+            Vector3 newPosX = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);         
+            Instantiate(columna, newPosX, Quaternion.identity);
+
+            yield return new WaitForSeconds(intervalo);
+
+        }
+    }
+}

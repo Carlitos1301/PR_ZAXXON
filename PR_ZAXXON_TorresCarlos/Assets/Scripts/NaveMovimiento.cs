@@ -17,8 +17,8 @@ public class NaveMovimiento : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 5f;
-        rotationSpeed = 20;
+        speed = 4f;
+        
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class NaveMovimiento : MonoBehaviour
       
         float desplX = Input.GetAxis("Horizontal") * speed;
         float desplY = Input.GetAxis("Vertical") * speed;
-        float desplR = Input.GetAxis("Rotation") * rotationSpeed;
+       
        
         float posX = transform.position.x;
         float posY = transform.position.y;
@@ -43,7 +43,6 @@ public class NaveMovimiento : MonoBehaviour
             transform.Translate(Vector3.up * desplY * Time.deltaTime * speed, Space.World);
         }
         
-        transform.Rotate(0f, 0f, desplR * -rotationSpeed * Time.deltaTime);
 
 
 
