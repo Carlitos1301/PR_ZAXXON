@@ -11,14 +11,14 @@ public class Columna : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inicio = GameObject.Find("Inicio").GetComponent<Inicio>();
+        inicio = GameObject.Find("Variables").GetComponent<Inicio>();
         speed = inicio.spaceship;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.back * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * Time.deltaTime * speed);
 
         float posZ = transform.position.z;
         if (posZ < - 20)

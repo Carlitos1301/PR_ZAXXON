@@ -6,17 +6,16 @@ public class Instan : MonoBehaviour
 {
     float intervalo;
     float speed;
-    [SerializeField] GameObject columna;
     [SerializeField] Transform instantiatePos;
     [SerializeField] GameObject[] objetos;
-    [SerializeField] float distancia;
+    [SerializeField] float distancia ;
     Inicio inicio;
 
     // Start is called before the first frame update
     void Start()
     {
-        distancia = 30f;
-        inicio = inicio = GameObject.Find("Inicio").GetComponent<Inicio>();
+        distancia = 10f;
+        inicio = GameObject.Find("Variables").GetComponent<Inicio>();
         speed = inicio.spaceship;
         intervalo = distancia / speed;
 
@@ -35,12 +34,12 @@ public class Instan : MonoBehaviour
         
         while (true)
         {
-           
+            int NumA = Random.Range(0, objetos.Length);
 
 
-            float randomX = Random.Range(-18f, 18);
+            float randomX = Random.Range(-15f, 15);
             Vector3 newPosX = new Vector3(randomX, instantiatePos.position.y, instantiatePos.position.z);         
-            Instantiate(columna, newPosX, Quaternion.identity);
+            Instantiate(objetos[NumA], newPosX, Quaternion.identity);
 
             yield return new WaitForSeconds(intervalo);
 

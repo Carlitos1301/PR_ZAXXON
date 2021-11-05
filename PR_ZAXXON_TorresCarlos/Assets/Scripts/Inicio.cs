@@ -10,7 +10,7 @@ public class Inicio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spaceship = 30f;
+        spaceship = 50f;
     }
 
     // Update is called once per frame
