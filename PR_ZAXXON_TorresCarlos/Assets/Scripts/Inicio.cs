@@ -10,12 +10,23 @@ public class Inicio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spaceship = 50f;
+        spaceship = 30f;
+        StartCoroutine("Aumento");
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         
+    }
+    IEnumerator Aumento()
+    {
+        while (spaceship <= 150)
+        {
+            spaceship = spaceship + 5f;
+            yield return new WaitForSeconds(5f);
+        }
     }
 }

@@ -17,7 +17,7 @@ public class NaveMovimiento : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 4f;
+        speed = 5f;
         
     }
 
