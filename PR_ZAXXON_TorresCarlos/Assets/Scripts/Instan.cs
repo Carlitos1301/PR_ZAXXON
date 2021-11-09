@@ -14,7 +14,7 @@ public class Instan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        distancia = 10f;
+        distancia = 6f;
         inicio = GameObject.Find("Variables").GetComponent<Inicio>();
         speed = inicio.spaceship;
         intervalo = distancia / speed;
