@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5947566273524340806}
   - component: {fileID: 1361681746082592894}
   - component: {fileID: 3626917915201605775}
-  m_Layer: 0
+  - component: {fileID: 1205901909268907846}
+  m_Layer: 3
   m_Name: pTorus2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6271573414225017425, guid: f720b9b48a4e66647a0eedf3e2ee1bb2, type: 3}
+  - {fileID: 2100000, guid: 78e99f1445a7fc144b5842aee9208d2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1205901909268907846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197682884667868381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006390034, y: 0.0625183, z: 0.045921065}
+  m_Center: {x: 0.0000010320545, y: -0.0010796967, z: -0.001873161}
 --- !u!1 &3067325799783827814
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5588018353767419938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1386428836514980600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3515327984157976404}
   - component: {fileID: 3360912938722716170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ancla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7339148061216323090}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5604236974300470126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pTorus1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6898762249322668162}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

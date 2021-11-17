@@ -5,12 +5,14 @@ using UnityEngine;
 public class Inicio : MonoBehaviour
 {   
     public float spaceship;
+    public int vidas;
    
     
     // Start is called before the first frame update
     void Start()
     {
-        spaceship = 30f;
+        vidas = 3;
+        spaceship = 80f;
         StartCoroutine("Aumento");
     }
 
@@ -23,7 +25,7 @@ public class Inicio : MonoBehaviour
     }
     IEnumerator Aumento()
     {
-        while (spaceship <= 150)
+        while (spaceship <= 250)
         {
             spaceship = spaceship + 5f;
             yield return new WaitForSeconds(5f);

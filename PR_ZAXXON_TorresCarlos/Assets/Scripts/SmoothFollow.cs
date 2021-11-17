@@ -41,7 +41,8 @@ public class SmoothFollow : MonoBehaviour
         transform.position.z);
         //Apuntamos la cámara siempre al objetivo, añadiendo un pequeño offset
         var target2 = target.position + new Vector3(0, 2.02f, 0);
-        transform.LookAt(target2);
+        transform.LookAt(target2);
+
     }
 }
 

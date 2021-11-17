@@ -316,8 +316,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1513034468}
-        m_TargetAssemblyTypeName: Boton2, Assembly-CSharp
-        m_MethodName: Inicio
+        m_TargetAssemblyTypeName: Botones, Assembly-CSharp
+        m_MethodName: Sonido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1513034467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 266a88a6a9a51dd45950edd7ca287402, type: 3}
+  m_Script: {fileID: 11500000, guid: 074ae6cf322cfea4581865deccca6024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1513034469

@@ -10,5 +10,13 @@ public class Botones : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void Sonido()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void Atras()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 }

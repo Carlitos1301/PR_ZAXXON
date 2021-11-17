@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3924847117414409210}
   - component: {fileID: 198957410485901324}
   - component: {fileID: 7937368453899514018}
-  m_Layer: 0
+  - component: {fileID: 7018642577169182930}
+  m_Layer: 3
   m_Name: pTorus1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7018642577169182930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2871144306396507043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030000001, y: 0.010000005, z: 0.024242576}
+  m_Center: {x: -5.2187056e-17, y: -0.0000000010015611, z: 0.00020490387}
 --- !u!1 &3842789572093150913
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57352702564449558}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5438395962047356864}
   - component: {fileID: 1163177229369561984}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Salvav
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +183,7 @@ GameObject:
   - component: {fileID: 4956838087589976642}
   - component: {fileID: 6213736306104886290}
   - component: {fileID: 9047157687283799854}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2335584658225460649}
   - component: {fileID: 544195131045151075}
   - component: {fileID: 3307312709375109098}
-  m_Layer: 0
+  - component: {fileID: 353397622206229053}
+  m_Layer: 6
   m_Name: CoralAzul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,6 +95,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750d20d0173768f47b4442048d3f4626, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &353397622206229053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057479716001947830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008568525, y: 0.038142115, z: 0.01389237}
+  m_Center: {x: 0.00019212367, y: 0.013623667, z: 0.0029012414}
 --- !u!1 &5343383367883378260
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899581142244954741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
