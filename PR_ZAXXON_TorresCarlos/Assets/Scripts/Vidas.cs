@@ -28,6 +28,11 @@ public class Vidas : MonoBehaviour
     void Update()
     {
         inicio = GameObject.Find("Variables").GetComponent<Inicio>();
+       if(vidas==0)
+        {
+            SceneManager.LoadScene(3);
+            new WaitForSeconds(10);
+        }
         
         
     }
@@ -51,6 +56,8 @@ public class Vidas : MonoBehaviour
         {
 
         }
+
            
     }
+   
 }

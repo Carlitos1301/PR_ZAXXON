@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sonido.unity
     guid: a6be84cada0331142a7229ea1af619b3
+  - enabled: 1
+    path: Assets/Scenes/GameOve.unity
+    guid: 1a0e12e829728b0498efd9af5f267d78
   m_configObjects: {}
