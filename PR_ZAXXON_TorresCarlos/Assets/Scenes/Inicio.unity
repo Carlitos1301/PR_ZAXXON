@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 633052639}
   - component: {fileID: 633052638}
   - component: {fileID: 633052637}
+  - component: {fileID: 633052641}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -468,6 +469,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &633052641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633052636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59788cfed0e93b04bb28f5037ce9bd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713339211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1219,18 @@ MonoBehaviour:
       - m_Target: {fileID: 132655480}
         m_TargetAssemblyTypeName: Botones, Assembly-CSharp
         m_MethodName: Inicio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 633052641}
+        m_TargetAssemblyTypeName: CanvasManager, Assembly-CSharp
+        m_MethodName: IniciarJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,15 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Vidas : MonoBehaviour
 {
     Inicio inicio;
+    [SerializeField] Image vidasImagen;
+    [SerializeField] Sprite [] vidasSprite;
+    int vidas;
 
     // Start is called before the first frame update
     void Start()
     {
         
+        if(Juego.vidasJugador == 0)
+        {
+            Juego.vidasJugador = 3;
+        }
+        print(Juego.vidasJugador);
+        vidas = Juego.vidasJugador;
+        vidasImagen.sprite = vidasSprite[vidas];
     }
 
     // Update is called once per frame
@@ -17,12 +29,15 @@ public class Vidas : MonoBehaviour
     {
         inicio = GameObject.Find("Variables").GetComponent<Inicio>();
         
+        
     }
     public IEnumerator OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer==3 && inicio.vidas>0)
         {
             inicio.vidas--;
+            vidas--;
+            vidasImagen.sprite = vidasSprite[vidas];
             print(inicio.vidas);
             yield return new WaitForSeconds(2);
            
