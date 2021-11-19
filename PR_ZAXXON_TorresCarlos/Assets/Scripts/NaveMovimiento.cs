@@ -8,7 +8,7 @@ public class NaveMovimiento : MonoBehaviour
     [SerializeField] float rotationSpeed;
 
     //Variables para restricción
-    float limiteH = 18f;
+    float limiteH = 15f;
 
     // Start is called before the first frame update
     void Start()
