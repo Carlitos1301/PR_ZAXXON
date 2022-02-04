@@ -52,11 +52,7 @@ public class Vidas : MonoBehaviour
             print("Tiempo");
             yield return new WaitForSeconds(2);
         }
-        else if(inicio.vidas == 0)
-        {
-
-        }
-
+       
            
     }
    
