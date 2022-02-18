@@ -12,7 +12,7 @@ public class Inicio : MonoBehaviour
     void Start()
     {
         vidas = 3;
-        spaceship = 80f;
+        spaceship = 70f;
         StartCoroutine("Aumento");
     }
 
