@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ddf49f1add068649a8a92b89e8e91ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntuacion: {fileID: 0}
+  puntuacion: {fileID: 1265117277}
 --- !u!1 &1260406434
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 1265117278}
   - component: {fileID: 1265117277}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Puntos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -992,7 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48584908, g: 0.5369643, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1236,6 +1236,7 @@ GameObject:
   - component: {fileID: 1596174638}
   - component: {fileID: 1596174642}
   - component: {fileID: 1596174641}
+  - component: {fileID: 1596174644}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1276,7 +1277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e293f7d4cfb99b64b87cc9cdb3ffbd3b, type: 2}
+  - {fileID: 2100000, guid: c6d38711520119c4e89ddf1ea6adc007, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1363,6 +1364,18 @@ RectTransform:
   m_AnchoredPosition: {x: -0.14, y: -0.16}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1596174644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596174637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3ede8e253ab7bb409396191fc488b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1836019727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,7 +1530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidasImagen: {fileID: 577699715}
   vidasSprite:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 63b02df968299b4488a86c58fdef2231, type: 3}
   - {fileID: 1169530538666953304, guid: 4793668d93164c84395a28f47cc6c96f, type: 3}
   - {fileID: -5207669786690686271, guid: 4793668d93164c84395a28f47cc6c96f, type: 3}
   - {fileID: -581110291875678614, guid: 4793668d93164c84395a28f47cc6c96f, type: 3}
